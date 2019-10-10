@@ -48,12 +48,25 @@
  - 'npm install morgan': HTTP request logger, keeps track of information being passed around with timestamps
  - Do not reveal information to client side while trying to log data (complex in terms of how much actual data to log).
 
+### HTTPS Everywhere:
+ - SSL/TLS Certificates: protects data being passed over the internet and acts as verification protocol for websites.
+ - https://letsencrypt.org: assists with privacy, protection, certificate ("S" for "Secure"), easy to setup and free.  Backed by Google, Cisco, Mozilla.
+ - www.cloudflare.com: provides hosting with HTTPS out of the box also help against DDOS (Distributed Denial of Service Attack).
+
+### XSS (CROSS-SITE SCRIPTING) & CSRF(CROSS-SITE REQUEST FORGERY):
+ - Sanitize Input
+ - No eval() -> Do not use this.
+ - No document.write() -> Set CSP to block this.
+ - Content Security Policy -> Important!
+ - Secure + HTTPOnly Cookies: HTTPOnly allows only HTML access instead of JS which helps prevent cookies from being attacked by client side scripting and Secure attribute ensures cookies will be sent over the HTTP connection
+ - CSRF Exercise Link: https://www.hacksplaining.com/exercises/csrf
+ - XSS Exercise Link: https://www.hacksplaining.com/exercises/xss-stored
+
  - Authentication
  - Don't Trust Anyone
  - Data Management
  - Access Control
  - Secure Headers
  - Code Secrets
- - XSS & CSRF
- - HTTPS Everywhere
+
 
