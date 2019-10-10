@@ -24,18 +24,17 @@
     
 #### TYPES OF ATTACKS:
 
-**Deletes DB:**
+ **Deletes DB:**
 
    ``'; DROP TABLE sqlinjection; --'``
    ``INSERT INTO sqlinjection (email) VALUES (; DROP TABLE sqlinjection; --);``
 
-**Password Field Access:**
+ **Password Field Access:**
 
    ``' or 1=1--'``
 
-**Image Script Injection:**
-
-    ``<!-- <img src='/' onerror="alert('boom');"> -->``
+ **Image Script Injection:**
+    ``<img src='/' onerror="alert('boom');">``
 
  - Authentication
  - Don't Trust Anyone
