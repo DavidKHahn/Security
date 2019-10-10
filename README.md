@@ -13,7 +13,7 @@
 
     - Parametrize Queries:
         - Predefined functions taking in specific parameters
-        
+
         **Example:**
 
             function sqlSelect(name, email, id) {
@@ -42,6 +42,12 @@
    - 'npm install -g nsp' (nsp check # audit package.json): you can use this to check for any vulnerabilities within a log format
    - 'npm install -g snyk' (snyk test # audit node_modules directory) help with checking 3rd party libraries and assists with fixing vulnerabilites. Snyk requires an authenticated account (use cmds 'snyk test, snyk auth').
 
+### Logging:
+ - Having good logging allows detecting issues, bugs quickly which makes this crucial to keep track of information
+ - 'npm install winston': logger for everything similar to console.log but with more tools (source: https://github.com/winstonjs/winston)
+ - 'npm install morgan': HTTP request logger, keeps track of information being passed around with timestamps
+ - Do not reveal information to client side while trying to log data (complex in terms of how much actual data to log).
+
  - Authentication
  - Don't Trust Anyone
  - Data Management
@@ -50,5 +56,4 @@
  - Code Secrets
  - XSS & CSRF
  - HTTPS Everywhere
- - Logging
 
