@@ -6,37 +6,37 @@
     - https://www.hacksplaining.com/exercises/sql-injection (SQL Injection exercise detailing attack)
 
 
-``
-3 MAIN POINTS:
+#### 3 MAIN POINTS:
 
-    - Sanitize Input:
+ - Sanitize Input:
         - Only allow data of expected type
         - Using whitelist or blacklist while preserving correct content types
 
     - Parametrize Queries:
         - Predefined functions taking in specific parameters
-        - Example:
+        **Example:**
 
             ``function sqlSelect(name, email, id) {
                 if(name === number)
             }``
 
     - Knex.js or other ORMS: http://knexjs.org/
+    
+#### TYPES OF ATTACKS:
 
-TYPES OF ATTACKS:
+**Deletes DB:**
 
-Deletes DB:
+   ``'; DROP TABLE sqlinjection; --'``
+   ``INSERT INTO sqlinjection (email) VALUES (; DROP TABLE sqlinjection; --);``
 
-'; DROP TABLE sqlinjection; --'
-INSERT INTO sqlinjection (email) VALUES (; DROP TABLE sqlinjection; --);
+**Password Field Access:**
 
-Password Field Access:
-' or 1=1--'
+   ``' or 1=1--'``
 
-Image Script Injection:
+**Image Script Injection:**
 
-<!-- <img src='/' onerror="alert('boom');"> -->
-``
+    ``<!-- <img src='/' onerror="alert('boom');"> -->``
+
  - Authentication
  - Don't Trust Anyone
  - Data Management
