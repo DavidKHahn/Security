@@ -1,0 +1,23 @@
+{
+  "name": "Security",
+  "version": "1.0.0",
+  "description": "### Injections:    - Most common attacks with highest financial loss for companies (i.e. SQL injection)    - https://www.hacksplaining.com/exercises/sql-injection (SQL Injection exercise detailing attack)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidKHahn/Security.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidKHahn/Security/issues"
+  },
+  "homepage": "https://github.com/DavidKHahn/Security#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3"
+  }
+}

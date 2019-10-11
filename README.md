@@ -98,9 +98,19 @@ USEFUL INFO:
         }
     }``
 
+#### Data Management:
+ - Make sure to always have a backup for data, limit sensitive data exposure (encrypt at rest and translation: expensive)
+ - bcrypt, scrypt, Aragon2 (hashing passwords and how to store them). **Never store passwords in plaintext.**
+ - pgcrypto - encrypt a few columns (how to encrypt specific database columns)
+ - Note when posting password through form: *POST requests are never cached, POST request will not remain in the browser history, No restriction on data length*
+
+USEFUL LINK:
+
+https://rangle.io/blog/how-to-store-user-passwords-and-overcome-security-threats-in-2017/ (How to Store User Passwords and Overcome Security Threats)
+
  - Authentication
  - Don't Trust Anyone
- - Data Management
+
 
 
 
