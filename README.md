@@ -108,11 +108,18 @@ USEFUL LINK:
 
 https://rangle.io/blog/how-to-store-user-passwords-and-overcome-security-threats-in-2017/ (How to Store User Passwords and Overcome Security Threats)
 
- - Authentication
- - Don't Trust Anyone
+#### Don't Trust Anyone:
+- Whenever input is being accepted from outside world always have mindset to prevent attacks from bad actors.
 
+#### Authentication:
+ - Making sure the person on the otherside is who they say they are.
+ - Make sure passwords match and afterwards we send cookie or token to manage sessions.  *With cookies, set HTTPOnly + Secure headers to true.*
+ - Implementating multi-factor authentications, setting long and smart passwords.
 
+USEFUL Link:
 
-
+https://www.hacksplaining.com/lessons (Hacking Lessons)
+https://watchyourhack.com/ (Staying aware of hackers and potential attacks)
+https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project (Staying up-to date on most current security features and attacks)
 
 
