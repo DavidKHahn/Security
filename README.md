@@ -81,10 +81,27 @@ USEFUL INFO:
  - https://www.tutorialspoint.com/http/http_header_fields.htm (HTTP - Header Fields)
  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers (Headers)
 
+#### Access Control:
+ - Having restrictions on what authenticated users are allowed to do or not
+ - *Principal of least privilege* (always give least amount of privilege possible)
+ - CORS (Cross Origin Sharing): restricts permissions to db access and adminsters web application options for users
+ - Example below of CORS set up giving permission to clients to the websites inside 'whitelist' array:
+
+ ``const whitelist = ['https://aneagoie.github.io', 'http://example2.com']
+    const corsOptions = {
+        origin: function (origin, callback) {
+            if (whitelist.indexOf(origin) !== -1) {
+                callback(null, true)
+            } else {
+                callback(new Error('Not allowed by CORS'))
+            }
+        }
+    }``
+
  - Authentication
  - Don't Trust Anyone
  - Data Management
- - Access Control
+
 
 
 
