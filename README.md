@@ -54,19 +54,38 @@
  - www.cloudflare.com: provides hosting with HTTPS out of the box also help against DDOS (Distributed Denial of Service Attack).
 
 ### XSS (CROSS-SITE SCRIPTING) & CSRF(CROSS-SITE REQUEST FORGERY):
+ - XSS: Scripts sent activating when it is read by an unsuspecting user's browser or by an application that has not protected itself against cross-site scripting (i.e. comment boxes, blog posts can have '<script></script>' access if not properly secured attacking user's cookies and browser)
+ - CSRF: Occurs when a user is tricked into interacting with a page or script on a third-party site that generates a malicious request to your site.
  - Sanitize Input
  - No eval() -> Do not use this.
  - No document.write() -> Set CSP to block this.
- - Content Security Policy -> Important!
+ - Content Security Policy: An added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement to distribution of malware.
  - Secure + HTTPOnly Cookies: HTTPOnly allows only HTML access instead of JS which helps prevent cookies from being attacked by client side scripting and Secure attribute ensures cookies will be sent over the HTTP connection
  - CSRF Exercise Link: https://www.hacksplaining.com/exercises/csrf
  - XSS Exercise Link: https://www.hacksplaining.com/exercises/xss-stored
+
+ USEFUL INFO:
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP (Content Security Policy)
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies (HTTP Cookies)
+  - https://medium.com/hackernoon/cross-site-scripting-for-dummies-be30f76fad09 (Cross-site scripting for dummies)
+
+#### Code Secrets:
+ - Environmental Variables (i.e. using process.env.NODE_ENV to hide API KEYS, private info)
+ - Commit History: Use a '.gitignore' file and never commit secret files otherwise Github will pickup 'removed passwords' in history.
+
+#### Secure Headers:
+ - 'npm install helmet' to have secure headers (https://www.npmjs.com/package/helmet)
+ - 'helmet' sets CSP for us, protects server information
+
+USEFUL INFO:
+ - https://www.tutorialspoint.com/http/http_header_fields.htm (HTTP - Header Fields)
+ - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers (Headers)
 
  - Authentication
  - Don't Trust Anyone
  - Data Management
  - Access Control
- - Secure Headers
- - Code Secrets
+
+
 
 
