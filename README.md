@@ -106,7 +106,7 @@ USEFUL INFO:
 
 USEFUL LINK:
 
-https://rangle.io/blog/how-to-store-user-passwords-and-overcome-security-threats-in-2017/ (How to Store User Passwords and Overcome Security Threats)
+ - https://rangle.io/blog/how-to-store-user-passwords-and-overcome-security-threats-in-2017/ (How to Store User Passwords and Overcome Security Threats)
 
 #### Don't Trust Anyone:
 - Whenever input is being accepted from outside world always have mindset to prevent attacks from bad actors.
@@ -118,8 +118,10 @@ https://rangle.io/blog/how-to-store-user-passwords-and-overcome-security-threats
 
 USEFUL Link:
 
-https://www.hacksplaining.com/lessons (Hacking Lessons)
-https://watchyourhack.com/ (Staying aware of hackers and potential attacks)
-https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project (Staying up-to date on most current security features and attacks)
+ - https://www.hacksplaining.com/lessons (Hacking Lessons)
+
+ - https://watchyourhack.com/ (Staying aware of hackers and potential attacks)
+
+ - https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project (Staying up-to date on most current security features and attacks)
 
 
