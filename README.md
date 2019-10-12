@@ -1,4 +1,4 @@
-# Security
+# Security Guidelines
 
 ### Injections:
    - Most common attacks with highest financial loss for companies (i.e. SQL injection)
